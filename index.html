@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-	<!-- <head>
+	<head>
 		<title> Hi, it's Winnie the Xu! </title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 
-	<body>
+	<!-- <body>
 		<nav>
 		<ul>
 			<li><a href="/">Home</a></li>
@@ -17,6 +17,8 @@
 		</nav>
 	</body> -->
 
+	<body>
+	<div>
 	<section id="first-section">
 		<div class="container">
 			<div class="row">
@@ -32,7 +34,9 @@
 			</div>
 		</div>
 	</section>
+	</div>
 	
+	<div>
 	<section id="second-section">
 		<div class="container">
 			<div class="row">
@@ -40,7 +44,8 @@
 			</div>
 		</div>
 	</section>
-	
+</div>
+<div>
 	<section id="third-section">
 		<div class="container">
 			<div class="row">
@@ -49,13 +54,27 @@
 			</div>
 		</div>
 	</section>
-	<body>
-		<script>
+</div>
+		<script language="Javascript">
+			    // var current = $(window).scrollTop();
+				// 	var total = $(window).height() - current;
+				// 	var ele = $(".train");
+				// 	var currPosition = ele.position().left + 360;
+				// 	var trackLength = 300;
+				// 	$(window).scroll(function (event) {
+				// 		current = $(window).scrollTop();
+				// 		console.log({ total: total, current: current });
+				// 		console.log(current / total * 100);
+				// 		var newPosition = trackLength * (current / total)
+				// 		ele.css({ left: currPosition + newPosition + 'px' });
+				// 	});
+
 			$(window).on('scroll', function () {
 					var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
 					$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
 
 				});
 		</script>
+
 	</body>
 </html>
