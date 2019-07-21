@@ -18,7 +18,6 @@
 	</body> -->
 
 	<body>
-	<!-- <div> -->
 	<section id="first-section">
 		<div class="container">
 			<div class="row">
@@ -30,31 +29,28 @@
 					</div>
 				</div>
 						<script language="Javascript">
-							// var current = $(window).scrollTop();
-							// 	var total = $(window).height() - current;
-							// 	var ele = $(".train");
-							// 	var currPosition = ele.position().left + 360;
-							// 	var trackLength = 300;
-							// 	$(window).scroll(function (event) {
-							// 		current = $(window).scrollTop();
-							// 		console.log({ total: total, current: current });
-							// 		console.log(current / total * 100);
-							// 		var newPosition = trackLength * (current / total)
-							// 		ele.css({ left: currPosition + newPosition + 'px' });
-							// 	});
+							var current = $(window).scrollTop();
+								var total = $(window).height() - current;
+								var ele = $(".train");
+								var currPosition = ele.position().left + 360;
+								var trackLength = 300;
+								$(window).scroll(function (event) {
+									current = $(window).scrollTop();
+									console.log({ total: total, current: current });
+									console.log(current / total * 100);
+									var newPosition = trackLength * (current / total)
+									ele.css({ left: currPosition + newPosition + 'px' });
+								});
 
-							$(window).on('scroll', function () {
-								var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
-								$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
+							// $(window).on('scroll', function () {
+							// 	var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+							// 	$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
 
-							});
+							// });
 						</script>
 			</div>
 		</div>
 	</section>
-	<!-- </div> -->
-	
-	<!-- <div> -->
 	<section id="second-section">
 		<div class="container">
 			<div class="row">
@@ -62,8 +58,6 @@
 			</div>
 		</div>
 	</section>
-<!-- </div> -->
-<!-- <div> -->
 	<section id="third-section">
 		<div class="container">
 			<div class="row">
@@ -72,7 +66,7 @@
 			</div>
 		</div>
 	</section>
-<!-- </div> -->
+</div>
 
 
 	</body>
