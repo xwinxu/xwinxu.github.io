@@ -23,14 +23,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla diam quis
-						turpis eleifend, ac molestie diam consectetur. In at augue tellus. Pellentesque efficitur efficitur
-						nisl, suscipit blandit mauris. Quisque con</p>
+					<p class="text-center">Lorem ipsu</p>
 	
 					<div id="trainMotion">
 						<img src="http://i.imgur.com/uKxkshD.png" alt="Train" class="train">
 					</div>
 				</div>
+						<script language="Javascript">
+							// var current = $(window).scrollTop();
+							// 	var total = $(window).height() - current;
+							// 	var ele = $(".train");
+							// 	var currPosition = ele.position().left + 360;
+							// 	var trackLength = 300;
+							// 	$(window).scroll(function (event) {
+							// 		current = $(window).scrollTop();
+							// 		console.log({ total: total, current: current });
+							// 		console.log(current / total * 100);
+							// 		var newPosition = trackLength * (current / total)
+							// 		ele.css({ left: currPosition + newPosition + 'px' });
+							// 	});
+
+							$(window).on('scroll', function () {
+								var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+								$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
+
+							});
+						</script>
 			</div>
 		</div>
 	</section>
@@ -55,26 +73,7 @@
 		</div>
 	</section>
 <!-- </div> -->
-		<script language="Javascript">
-			    // var current = $(window).scrollTop();
-				// 	var total = $(window).height() - current;
-				// 	var ele = $(".train");
-				// 	var currPosition = ele.position().left + 360;
-				// 	var trackLength = 300;
-				// 	$(window).scroll(function (event) {
-				// 		current = $(window).scrollTop();
-				// 		console.log({ total: total, current: current });
-				// 		console.log(current / total * 100);
-				// 		var newPosition = trackLength * (current / total)
-				// 		ele.css({ left: currPosition + newPosition + 'px' });
-				// 	});
 
-			$(window).on('scroll', function () {
-					var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
-					$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
-
-				});
-		</script>
 
 	</body>
 </html>
