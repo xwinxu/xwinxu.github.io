@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
+	<!-- <head>
 		<title> Hi, it's Winnie the Xu! </title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
@@ -15,5 +15,47 @@
 			<li><a href="/blog">Blog</a></li>
 		</ul>
 		</nav>
+	</body> -->
+
+	<section id="first-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla diam quis
+						turpis eleifend, ac molestie diam consectetur. In at augue tellus. Pellentesque efficitur efficitur
+						nisl, suscipit blandit mauris. Quisque con</p>
+	
+					<div id="trainMotion">
+						<img src="http://i.imgur.com/uKxkshD.png" alt="Train" class="train">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="second-section">
+		<div class="container">
+			<div class="row">
+				<p class="text-center">Lorem .</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="third-section">
+		<div class="container">
+			<div class="row">
+				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla diam quis
+					turpis eleifend, ac molestie diam consectetu.</p>
+			</div>
+		</div>
+	</section>
+	<body>
+		<script>
+			$(window).on('scroll', function () {
+					var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+					$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
+
+				});
+		</script>
 	</body>
 </html>
