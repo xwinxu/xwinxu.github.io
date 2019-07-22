@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- <head>
+		<title> Hi, it's Winnie the Xu! </title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head> -->
+
+	<!-- <body>
+		<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/resume/WinnieXu_Resume.pdf">Resume</a></li>
+			<li><a href="/creative/create.html">Creative</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+		</nav>
+	</body> -->
+<head>
+	<title> text conversion</title>
+	<script language="JavaScript">
+
+		function testResults(form) {
+			var str = form.stringn.value;
+			var newString = "";
+			var strList = str.split(" ");
+			for (var i = 0; i < strList.length; i++) {
+				newWord = strList[i].charAt(0).toUpperCase() + strList[i].slice(1) + ".";
+				newString += newWord + " ";
+			}
+			document.write(newString);
+		}
+
+	</script>
+</head>
+
+<body>
+	<form name="stringform" action="" method="get">
+		Text: <input type="text" name="stringn"><br>
+		<input type="button" name="Convert" Value="convert" onClick="testResults(this.form)">
+	</form>
+</body>
+
+	<!-- <body>
+	<section id="first-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center">Lorem ipsu</p>
+	
+					<div id="trainMotion">
+						<img src="http://i.imgur.com/uKxkshD.png" alt="Train" class="train">
+					</div>
+				</div>
+						<script language="Javascript">
+							var current = $(window).scrollTop();
+								var total = $(window).height() - current;
+								var ele = $(".train");
+								var currPosition = ele.position().left + 360;
+								var trackLength = 300;
+								$(window).scroll(function (event) {
+									current = $(window).scrollTop();
+									console.log({ total: total, current: current });
+									console.log(current / total * 100);
+									var newPosition = trackLength * (current / total)
+									ele.css({ left: currPosition + newPosition + 'px' });
+								});
+
+							// $(window).on('scroll', function () {
+							// 	var trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+							// 	$('.train').css('transform', 'translateX(' + (trainPosition - 50) + '%)');
+
+							// });
+						</script>
+			</div>
+		</div>
+	</section>
+	<section id="second-section">
+		<div class="container">
+			<div class="row">
+				<p class="text-center">Lorem .</p>
+			</div>
+		</div>
+	</section>
+	<section id="third-section">
+		<div class="container">
+			<div class="row">
+				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla diam quis
+					turpis eleifend, ac molestie diam consectetu.</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+	</body> -->
+</html>
