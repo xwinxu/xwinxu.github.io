@@ -70,7 +70,7 @@
 } */
 #particles-js {
   height: 100vh;
-  background-image: url("backgroundblue.jpg");
+  background-image: url('backgroundblue.jpg');
   /* background: #b0b3cf; */
 }
 
