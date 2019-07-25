@@ -28,7 +28,7 @@
                                 <tr style="padding:0px">
                                     <td style="padding:2.5%;width:63%;vertical-align:middle">
                                         <p style="text-align:center">
-                                            <a href="#"><name>Hey, I'm Winnie</name></a>
+                                            <name>Hey, I'm Winnie</name>
                                         </p>
                                         <p>
                                             Let's reflect on the latest scientific research, challenge the issues facing global communities, and use technology to empower expansive reformation.
@@ -52,7 +52,7 @@
                                         </p>
                                     </td>
                                     <td style="padding:2.5%;width:40%;max-width:40%">
-                                        <img src="images/nyc_circle.png" img style="width:100%;max-width:100%">
+                                        <a href="#"><img src="images/nyc_circle.png" img style="width:100%;max-width:100%"></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -102,6 +102,53 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:20px;width:100%;vertical-align:middle">
+                                        <heading>Projects</heading>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <div class="two" id='pub_image'><img src='images/alphago_bright.jpg' width='160' height='160'></div>
+                                            <img src='images/alphago.jpg' width='160' height='160'>
+                                        </div>
+                                        <script type="text/javascript">
+                                            function porlight_start() {
+                                                document.getElementById('pub_image').style.opacity = "1";
+                                            }
+                                            function porlight_stop() {
+                                                document.getElementById('pub_image').style.opacity = "0";
+                                            }
+                                            porlight_stop()
+                                        </script>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://github.com/xwinxu/DOC">
+                                            <papertitle>DOC: Digital On-Call-Healthcare Consultant</papertitle>
+                                        </a>
+                                        <br>
+                                        <p>
+                                        DOC is a tool for doctors to receive a second opinion on the diagnosis of medical conditions directly through patient
+                                        interaction in real time through the analysis of the symptoms and conversations they have with their patients.
+                                        Subsequently, DOC streamlines the recommendation for potential ailments by providing further questions to ask in order
+                                        to generate an objective and accurate diagnosis that is wholistic in scale.
+                                        </p>
+                                        <strong>BCGxGoogle Global Engineering Week Hackathon 2019</strong>
+                                        <p></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
                     </td>
                 </tr>
             </tbody>

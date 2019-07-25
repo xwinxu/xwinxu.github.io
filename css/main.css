@@ -82,9 +82,11 @@
   height: 100%;
   left: 0px;
   top: 0px;
-  /* background-image: url('backgroundblue.jpg'); */
   z-index: -1;
-  background: #021638e8;
+  background: url("https://firebasestorage.googleapis.com/v0/b/research-decab.appspot.com/o/backgroundblue.jpg?alt=media&token=b8a6eb98-27a8-4849-8425-e0b40891447c");
+  background-size: cover;
+  /* background: #2F4F4F; */
+  /* background: #021638e8; */
 }
 
 a {
@@ -132,6 +134,7 @@ papertitle {
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 45px;
+  color: #f09228;
 }
 
 .one {

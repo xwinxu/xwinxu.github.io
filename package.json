@@ -1,0 +1,23 @@
+{
+  "name": "xwinxucom",
+  "version": "1.0.0",
+  "description": "Visit winniexu.ca",
+  "main": "app.js",
+  "dependencies": {
+    "local-web-server": "^3.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwinxu/xwinxu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwinxu/xwinxu.github.io/issues"
+  },
+  "homepage": "https://github.com/xwinxu/xwinxu.github.io#readme"
+}
