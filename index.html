@@ -14,6 +14,16 @@
 <title>Winnie Xu.</title>
 
 <body>
+    <!-- <div id="navbar"> -->
+    <nav id="navbar">
+        <a href="#" class="brand">winnie xu.</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="insights/index.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- </div> -->
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <!-- <script type="text/javascript" src="particles.js"></script>
         <script type="text/javascript" src="app.js"></script> -->
@@ -123,6 +133,13 @@
                                 <tr>
                                     <td style="padding:20px;width:100%;vertical-align:middle">
                                         <heading>Recent Projects</heading>
+                                        <p>
+                                            This is how I've learned. I'm an inquisitive individual who always loves a challenge.
+                                        </p>
+                                        <p>
+                                            From data mining to web development, entrepreneurship to basic science, I am grateful to have 
+                                            spent my time gaining and practising new skills to make a positive impact on myself and others.
+                                        </p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -243,6 +260,38 @@
             console.log("particles.json loaded...")
         })
     </script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            var atTop = document.getElementById('scrollable');
+            // if (prevScrollpos > currentScrollPos) {
+            //     document.getElementById("navbar").style.top = "0";
+            // } else {
+            //     document.getElementById("navbar").style.top = "-50px";
+            // }
+            if (prevScrollpos < currentScrollPos) {
+                document.getElementById("navbar").style.top = "-50px";
+            } else {
+                document.getElementById("navbar").style.top = "0";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!-- <script>
+        window.onscroll = function (e) {
+            topMenu = document.querySelector('navbar');
+            scrollTopAmount = document.body.scrollTop;
+
+            if (scrollTopAmount != 0) {
+                topMenu.style.display = 'none';
+            }
+            else
+                topMenu.style.display = 'block';
+        }
+    </script> -->
 </body>
 
 </html>
