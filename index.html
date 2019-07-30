@@ -99,6 +99,69 @@
 
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                             <tbody>
+                                <tr onmouseout="segway_stop()" onmouseover="segway_start()">
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <div class="two" id='segway_image'><img src='images/segway_bright.png' width='160' height='160'></div>
+                                            <img src='images/segway.png' width='160' height='160'>
+                                        </div>
+                                        <script type="text/javascript">
+                                            function segway_start() {
+                                                document.getElementById('segway_image').style.opacity = "1";
+                                            }
+                                            function segway_stop() {
+                                                document.getElementById('segway_image').style.opacity = "0";
+                                            }
+                                            segway_stop()
+                                        </script>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://github.com/xwinxu/sequencing-resolution-analysis">
+                                            <papertitle>Exploring the Differential Effects of Sequencing Resolution on Semi-Automated Genome Annotations</papertitle>
+                                        </a>
+                                        <br>
+                                        <p>Computational genomics project that validated the utility of two novel next-generation-sequencing assays in epigenetic
+                                            exploration of cancer transcriptomes 
+                                            using custom bioinformatics pipelines, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3340533/">unsupervised machine learning</a>, and mathematical analyses.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr onmouseout="iclr_stop()" onmouseover="iclr_start()">
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <div class="two" id='iclr_image'><img src='images/iclr_bright.png' width='160' height='160'></div>
+                                            <img src='images/iclr.png' width='160' height='160'>
+                                        </div>
+                                        <script type="text/javascript">
+                                            function iclr_start() {
+                                                document.getElementById('iclr_image').style.opacity = "1";
+                                            }
+                                            function iclr_stop() {
+                                                document.getElementById('iclr_image').style.opacity = "0";
+                                            }
+                                            iclr_stop()
+                                        </script>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://github.com/UTMIST/ICLR-2019-Challenge/tree/master">
+                                            <papertitle>Initialized Equilibrium Propagation for Backprop-free Training</papertitle>
+                                        </a>
+                                        <br>
+                                        <p><a href="https://utmist.sa.utoronto.ca/">Machine Intelligence Student Team</a> research project as part of the 2019 ICLR Reproducibility Challenge
+                                            on <a href="https://openreview.net/forum?id=B1GMDsR5tm">OpenReview</a>. Our chosen paper investigated a novel improvement to Equilibrium Propagation and was later accepted.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
                                 <tr onmouseout="alpha_stop()" onmouseover="alpha_start()">
                                     <td style="padding:20px;width:25%;vertical-align:middle">
                                         <div class="one">
@@ -182,8 +245,8 @@
                                 <tr onmouseout="social_stop()" onmouseover="social_start()">
                                     <td style="padding:20px;width:25%;vertical-align:middle">
                                         <div class="one">
-                                            <div class="two" id='social_image'><img src='images/SocialBit.png' width='160' height='160'></div>
-                                            <img src='images/SocialBit-lite.png' width='160' height='160'>
+                                            <div class="two" id='social_image'><img src='images/SocialBit-lite.png' width='160' height='160'></div>
+                                            <img src='images/SocialBit.png' width='160' height='160'>
                                         </div>
                                         <script type="text/javascript">
                                             function social_start() {
@@ -215,8 +278,8 @@
                                 <tr onmouseout="cartpole_stop()" onmouseover="cartpole_start()">
                                     <td style="padding:20px;width:25%;vertical-align:middle">
                                         <div class="one">
-                                            <div class="two" id='cartpole_image'><img src='images/cartpole.png' width='160' height='160'></div>
-                                            <img src='images/cartpole-lite.png' width='160' height='160'>
+                                            <div class="two" id='cartpole_image'><img src='images/cartpole-lite.png' width='160' height='160'></div>
+                                            <img src='images/cartpole.png' width='160' height='160'>
                                         </div>
                                         <script type="text/javascript">
                                             function cartpole_start() {
