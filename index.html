@@ -74,7 +74,7 @@
                                         <p>
                                             I study <strong>Computer Science, Statistics and Math</strong> at the <a href="http://cs.toronto.edu">University of Toronto</a> with a specialization in 
                                             <strong>artificial intelligence</strong>.
-                                            Currently I am researching model-based reinforcement learning and robotics at the <a href="https://vectorinstitute.ai/#people">Vector Institute</a> 
+                                            Currently I am researching model-based reinforcement learning and robotics at the <a href="https://vectorinstitute.ai/#people">Vector Institute</a>, 
                                             co-advised by <a href="https://jimmylba.github.io/">Jimmy Ba</a> and <a href="https://sites.google.com/view/gugurus">Shane Gu</a>,
                                             developing state-of-the-art computer vision algorithms for autonomous driving with <a href="https://www.autodrive.utoronto.ca/">aUToronto</a>, and
                                             disrupting the next generation of carpooling platforms at <a href="https://hiride.ca">HiRide</a>.
@@ -245,6 +245,39 @@
 
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                             <tbody>
+                                <tr onmouseout="juul_stop()" onmouseover="juul_start()">
+                                    <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                            <div class="two" id='juul_image'><img src='images/juul.png' width='160' height='160'></div>
+                                            <img src='images/juul-brighter.png' width='160' height='160'>
+                                        </div>
+                                        <script type="text/javascript">
+                                            function juul_start() {
+                                                document.getElementById('juul_image').style.opacity = "1";
+                                            }
+                                            function juul_stop() {
+                                                document.getElementById('juul_image').style.opacity = "0";
+                                            }
+                                            doc_stop()
+                                        </script>
+                                    </td>
+                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://devpost.com/software/innovape">
+                                            <papertitle>Innovape: The Health Aware Vape</papertitle>
+                                        </a>
+                                        <br>
+                                        <p>
+                                            With recent headlines showing multiple fatalities from vaping, we sought to create
+                                            a solution that can mitigate nicotine addiction in Juul users. We reverse engineered
+                                            the Juul to function with a dynamic Gaussian Process backend that can analyze the breath
+                                            patterns and usage frequency of the user and consequently adjust the nicotine output percentage
+                                            accordingly. What differentiates our product is the gradual weaning implementation, where the
+                                            percentage decrease is customized from user feedback.
+                                        </p>
+                                        <strong>Winner Hack the North 2019</strong>
+                                        <p></p>
+                                    </td>
+                                </tr>
                                 <tr onmouseout="doc_stop()" onmouseover="doc_start()">
                                     <td style="padding:20px;width:25%;vertical-align:middle">
                                         <div class="one">
@@ -272,7 +305,7 @@
                                         Subsequently, DOC streamlines the recommendation for potential ailments by providing further questions to ask in order
                                         to generate an objective and accurate diagnosis that is wholistic in scale.
                                         </p>
-                                        <strong>BCGxGoogle Global Engineering Week Hackathon 2019</strong>
+                                        <strong>1st Place BCGxGoogle Global Engineering Week Hackathon 2019</strong>
                                         <p></p>
                                     </td>
                                 </tr>
