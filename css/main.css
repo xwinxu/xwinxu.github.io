@@ -241,3 +241,36 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #f09228;
+  cursor: pointer; 
+  padding: 0;
+  margin-right: 20px;
+}
+
+button:hover {
+
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: none;
+}
+
+.section {
+  margin: auto;
+  max-width: 760px;
+}

@@ -97,12 +97,16 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="section">
+                            <button id="researchBtn">Research</button>
+                            <button id="projectBtn">Projects</button>
+                        </div>
 
+                        <div id="research" class="hidden">
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                             <tbody>
                                 <tr>
-                                    <td style="padding:20px;width:100%;vertical-align:middle">
-                                        <heading>Research</heading>
+                                    <td style="padding: 0 20px 20px;width:100%;vertical-align:middle">
                                         <p>
                                             I seek biological explanations to complex mathematical phenomena. 
                                             <br>
@@ -182,7 +186,7 @@
                                             iclr_stop()
                                         </script>
                                     </td>
-                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <td style="padding: 20px;width:75%;vertical-align:middle">
                                         <a href="https://github.com/UTMIST/ICLR-2019-Challenge/tree/master">
                                             <papertitle>Initialized Equilibrium Propagation for Backprop-free Training</papertitle>
                                         </a>
@@ -218,19 +222,19 @@
                                             <papertitle>Future publications, to come...</papertitle>
                                         </a>
                                         <br>
-                                        <!-- <a href="https://winniexu.ca">Winnie Xu</a>, -->
                                         <strong>Winnie Xu</strong>, et al.
                                         <p></p>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
 
+                        <div id="projects" class="hidden">
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                             <tbody>
                                 <tr>
-                                    <td style="padding:20px;width:100%;vertical-align:middle">
-                                        <heading>Recent Projects</heading>
+                                    <td style="padding: 0 20px 20px;width:100%;vertical-align:middle">
             
                                         <p>
                                             This is how I've learned. I'm an inquisitive individual who always loves a challenge.
@@ -385,6 +389,7 @@
 
                             </tbody>
                         </table>
+                    </div>
 
                                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                                     <tbody>
@@ -411,31 +416,7 @@
     
     <div id="particles-js"></div>
 
-    <script>
-        particlesJS.load("particles-js", "particles.json",
-        function(){
-            console.log("particles.json loaded...")
-        })
-    </script>
-
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            var atTop = document.getElementById('scrollable');
-            // if (prevScrollpos > currentScrollPos) {
-            //     document.getElementById("navbar").style.top = "0";
-            // } else {
-            //     document.getElementById("navbar").style.top = "-50px";
-            // }
-            if (prevScrollpos < currentScrollPos) {
-                document.getElementById("navbar").style.top = "-50px";
-            } else {
-                document.getElementById("navbar").style.top = "0";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    <script src="index.js"></script>
 
     <!-- <script>
         window.onscroll = function (e) {
