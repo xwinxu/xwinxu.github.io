@@ -26,7 +26,7 @@ document.querySelector("#researchBtn").addEventListener("click", function() {
     document.querySelector("#research").classList.toggle('hidden');
     document.querySelector("#projects").classList.add('hidden');
     document.querySelector("#projectBtn").classList.remove('highlight');
-    pJSDom[0].pJS.particles.move.speed = 1;
+    pJSDom[0].pJS.particles.move.speed = 2;
 
 })
 
@@ -35,5 +35,5 @@ document.querySelector("#projectBtn").addEventListener("click", function() {
     document.querySelector("#projects").classList.toggle('hidden');
     document.querySelector("#research").classList.add('hidden');
     document.querySelector("#researchBtn").classList.remove('highlight');
-    pJSDom[0].pJS.particles.move.speed = 1;
+    pJSDom[0].pJS.particles.move.speed = 2;
 })
