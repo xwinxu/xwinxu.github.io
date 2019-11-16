@@ -274,3 +274,7 @@ button:focus {
   margin: auto;
   max-width: 760px;
 }
+
+.ai-cv{
+  font-size:2px;
+}
