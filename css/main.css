@@ -198,6 +198,12 @@ strong {
   font-size: 16px;
 }
 
+firstauth {
+  font-family: 'Futura-med-it';
+  font-size: 16.5px;
+  font-weight: 1000;
+}
+
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   /* font-family: 'Futura'; */
@@ -207,7 +213,7 @@ heading {
 
 papertitle {
   font-family: 'Futura-bold-it';
-  font-size: 17px;
+  font-size: 18.5px;
   font-weight: 700;
 }
 
