@@ -172,7 +172,7 @@ a:hover {
 }
 
 /* #navbar { */
-nav {
+#navbar {
   /* position: fixed; */
   background-color: rgba(96, 124, 138, 0.53);
   top: 0;
@@ -193,7 +193,7 @@ nav {
   z-index: 500;
   left: 0px;
 }
-nav a:hover {
+#navbar a:hover {
   color: #f09228;
   text-decoration: none;
 }
@@ -201,7 +201,6 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  /* display: inline-block; */
   list-style-type: none;
 }
 ul li {
@@ -339,15 +338,12 @@ p {
   .div-only-mobile {
     display: none;
   }
-  .desk {
-    display: block;
-  }
   nav {
     position: fixed;
     margin-bottom: 3em;
   }
   .mobile-p {
-    margin-top: 3em;
+    margin-top: 0em;
   }
 }
 @media (max-width: 906px) {
@@ -357,11 +353,18 @@ p {
   .div-only-mobile {
     display: block;
   }
-  nav {
+  #navbar {
     position: sticky;
-    width: 100vh;
     margin: 0;
-    margin-bottom: 1em;
+    padding: 0 20px;
+    /* margin-bottom: 1em; */
+  }
+  #navbar .brand {
+    font-size: 1em;
+  }
+
+  #navbar ul li a {
+    padding: 0 10px;
   }
   .mobile-td {
     /* width: 6%; */
@@ -375,6 +378,23 @@ p {
   }
 
   .mobile-p name {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  .section {
+    margin-bottom: 3em;
+  }
+
+  .section button {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  #researchBtn {
+    margin-right: 10px;
+  }
+
+  #projectsBtn {
+    margin-left: 10px;
   }
 }
