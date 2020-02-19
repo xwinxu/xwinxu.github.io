@@ -334,6 +334,16 @@ p {
   line-height: 1.35;
 }
 
+.grid-2 {
+  max-width: 1200px;
+  display: grid;
+  /* grid-gap: 1rem; */
+  align-items: center;
+  line-height: 1.5;
+  /* grid-template-columns: 1fr, 2fr; */
+  grid-template-columns: 1fr 3fr;
+}
+
 @media (min-width: 907px) {
   .div-only-mobile {
     display: none;
@@ -346,7 +356,12 @@ p {
     margin-top: 0em;
   }
 }
+
 @media (max-width: 906px) {
+  .grid-2 {
+    margin-top: 3em;
+    grid-template-columns: 1fr;
+  }
   .desk {
     display: none;
   }
