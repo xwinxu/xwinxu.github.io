@@ -175,7 +175,9 @@ a:hover {
 #navbar {
   /* position: fixed; */
   background-color: rgba(96, 124, 138, 0.53);
-  top: 0;
+  top: 0px;
+  margin-bottom: 100px;
+  position: fixed;
   /* bottom: 0; */
   width: 100%;
   height: 50px;
