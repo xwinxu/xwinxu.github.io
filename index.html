@@ -98,19 +98,16 @@
                                                 href="https://www.autodrive.utoronto.ca/">aUToronto</a>. -->
                     </p>
                     <p>
-                      In the current academic year, I have been on
-                      <a target="_blank"
-                        href=https://engineeringcareers.utoronto.ca/work-experience-programs/professional-experience-year-co-op-program-pey-co-op />co-op</a>
-                      first building sparse neural network models
-                      <!-- with <a
-                                            href="https://research.google/people/LukaszKaiser/">Lukasz Kaiser</a> -->
+                      In the past academic year, I had the great fortune of
+                      building sparse neural network models
                       at
                       <a target="_blank" href="https://research.google/">Google Brain</a>,
                       <!-- (research in novel neural network architectures and training paradigms) -->
-                      then tackling sim2real transfer in RL and robotics at <a
+                      tackling sim2real transfer in RL and robotics at <a
                         href="https://www.nvidia.com/en-us/research/robotics/">NVIDIA Research</a>,
-                      and now bringing large-scale models of human-generated content
-                  to reality with <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website/">Yarin Gal</a> and <a href="https://aidangomez.ca/">Aidan Gomez</a> at <a href="https://secant.ai/">Cohere.ai</a>.
+                      and bringing large-scale models of human-generated content
+                      to reality with <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website/">Yarin Gal</a> and <a href="https://aidangomez.ca/">Aidan Gomez</a> at <a href="https://secant.ai/">Cohere.ai</a> 
+                      and <a href="https://oatml.cs.ox.ac.uk/">OATML</a>.
                       <br>
                       In the past, I researched computational genomics with <a target="_blank"
                         href=https://hoffmanlab.org />Michael Hoffman</a>
@@ -172,7 +169,7 @@
                         <!-- I seek biological explanations to complex mathematical phenomena and am
                                                 fascinated by intelligence.
                                                 <br> -->
-                        My research interests lie in <strong>(Bayesian) neural networks, latent
+                        My research interests lie in <strong>generative models, continuous-time models, latent
                           variable models, and distributional robustness.</strong>.
                       </p>
 
@@ -194,6 +191,49 @@
                         much of my research is about inferring the physical world, exploring the
                         anomalies and uncertainties in dynamical systems, and reasoning about the underpinnings of causality.
                       </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr class="grid-2" onmouseout="goldiprox_stop()" onmouseover="goldiprox_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='goldiprox_image'><img src='images/goldiprox.png' width='160' height='160'></div>
+                        <img src='images/goldiprox_bright.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function goldiprox_start() {
+                          document.getElementById('goldiprox_image').style.opacity = "1";
+                        }
+                        function goldiprox_stop() {
+                          document.getElementById('goldiprox_image').style.opacity = "0";
+                        }
+                        goldiprox_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>Prioritized training on points that are learnable, worth learning, and not yet learned</papertitle>
+                      <br>
+                      Soren Mindermann*,
+                      Muhammed Razzak*,
+                      <firstauth>Winnie Xu*</firstauth>,
+                      Andreas Kirsch, Mrinank Sharma, Adrien Morisot, Aidan N. Gomez, Sebastian Farquhar, Jan Brauner, Yarin Gal
+                      <!--<a href="https://www.cs.toronto.edu/~rtqichen/" target="_blank">Andreas Kirsch</a>,
+                      <a href="https://www.lxuechen.com/" target="_blank">Mrinank Sharma</a>,
+                      <a href="http://www.cs.toronto.edu/~duvenaud/" target="_blank"> Davi</a> -->
+                      <br>
+                      <p>
+                      We introduce Goldilocks Selection, a technique for faster model training which selects a sequence of training points that are "just right". We propose an information-theoretic acquisition function -- the reduci                      ble validation loss -- and compute it with a small proxy model -- GoldiProx -- to efficiently choose training points that maximize information about a validation set. We show that the "hard" (e.g. high loss) po                      ints usually selected in the optimization literature are typically noisy, while the "easy" (e.g. low noise) samples often prioritized for curriculum learning confer less information. Further, points with uncert                      ain labels, typically targeted by active learning, tend to be less relevant to the task. In contrast, Goldilocks Selection chooses points that are "just right" and empirically outperforms the above approaches.                       Moreover, the selected sequence can transfer to other architectures; practitioners can share and reuse it without the need to recreate it.
+                      </p>
+                      Workshop in Subset ML at ICML 2021.
+                      <br>
+
+                      <strong><a href="https://arxiv.org/abs/2107.02565" target="_blank">paper</a></strong> |
+                      <strong><a href="research/goldiprox-poster.pdf" target="_blank">poster</a></strong> |
                     </td>
                   </tr>
                 </tbody>
