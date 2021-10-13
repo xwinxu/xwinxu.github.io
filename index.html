@@ -85,12 +85,18 @@
                       I'm a senior undergrad at the <a target="_blank" href="http://cs.toronto.edu">University of
                         Toronto</a> studying
                       <strong>Computer Science, Statistics and Math</strong>.<br>
-                      My research interests lie in <strong>generative models, continuous-time parameterizations, and distributional robustness</strong>.<br>
-                      I'm fortunate to be advised by <a target="_blank" href="http://www.cs.toronto.edu/~duvenaud/">David Duvenaud</a> (<a target="_blank" href="https://vectorinstitute.ai/#people">Vector Institute</a>)
-                      and <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a target="_blank" href="http://statsml.stanford.edu/">Stanford StasML</a>).
-
-                      I also enjoy regularly collaborating on open research projects with the
-                      brilliant researchers at <a target="_blank" href="https://for.ai">FOR.ai</a>.
+                      My research interests lie in <strong>generative models, continuous-time
+                        parameterizations</strong>, and
+                      <strong>distributional robustness</strong>.<br>
+                      I'm fortunate to be advised by <a target="_blank"
+                        href="http://www.cs.toronto.edu/~duvenaud/">David Duvenaud</a> (<a target="_blank"
+                        href="https://vectorinstitute.ai/#people">Vector Institute</a>)
+                      and <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a
+                        target="_blank" href="http://statsml.stanford.edu/">Stanford StasML</a>).
+                      I am also spending time at <a target="_blank" href="https://research.google/">Google Research</a>
+                      hosted by <a target="_blank" href="https://openai.com/blog/authors/igor/">Igor Mordatch</a>.
+                      <!-- I also enjoy regularly collaborating on open research projects with the
+                      brilliant researchers at <a target="_blank" href="https://for.ai">FOR.ai</a>. -->
                     </p>
                     <p>
                       Previously, I spent time
@@ -114,8 +120,9 @@
                         href="https://hiride.ca">HiRide</a>.-->
                     </p>
                     <p>
-                      Check out my research / projects tab to see what I've been up to, and reach out to <a target="_blank" href="mailto:winniexu@cs.toronto.edu">winniexu@cs.toronto.edu</a> if you'd
-                      like to chat! 
+                      Check out my research / projects to see what I've been up to, and reach out <a target="_blank"
+                        href="mailto:winniexu@cs.toronto.edu">winniexu@cs.toronto.edu</a> if you'd
+                      like to chat!
                     </p>
                   </td>
                   <td class="desk" style="position:absolute;margin-top:10em;padding-left:1em;max-width: 300px;">
@@ -165,8 +172,9 @@
                         <!-- I seek biological explanations to complex mathematical phenomena and am
                                                 fascinated by intelligence.
                                                 <br> -->
-                        My recent work focuses on improving <strong>neural differential equation</strong> training paradigms, 
-                        developing scalable methods for more <strong>data efficient mini-batching</strong>, and 
+                        My recent work focuses on improving <strong>neural differential equation</strong> training
+                        paradigms,
+                        developing scalable methods for more <strong>data efficient mini-batching</strong>, and
                         optimizing <strong>score-based generative models</strong> with stochastic processes.
                       </p>
 
@@ -191,6 +199,61 @@
                   </tr>
                 </tbody>
               </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr class="grid-2" onmouseout="nfm_stop()" onmouseover="nfm_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='nfm_image'><img src='images/nfm.png' width='160' height='160'>
+                        </div>
+                        <img src='images/nfm_bright.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function nfm_start() {
+                          document.getElementById('nfm_image').style.opacity = "1";
+                        }
+                        function nfm_stop() {
+                          document.getElementById('nfm_image').style.opacity = "0";
+                        }
+                        nfm_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>Noisy Feature Mixup
+                      </papertitle>
+                      <br>
+                      <a href="https://shoelim.github.io/" target="_blank">Soon Hoe Lim</a>,
+                      <a href="https://www.benerichson.com/" target="_blank">N. Benjamin Erichson</a>,
+                      <a href="https://www.linkedin.com/in/francisco-utrera-3771382a/" target="_blank">Francisco
+                        Utrera</a>,
+                      <firstauth>Winnie Xu</firstauth>,
+                      <a href="https://www.stat.berkeley.edu/~mmahoney/" target="_blank">Michael Mahoney</a>
+                      <br>
+                      <p>
+                        We introduce Noisy Feature Mixup (NFM), an inexpensive yet effective method for data
+                        augmentation
+                        that combines the best of interpolation based training and noise injection schemes. We use
+                        noise-perturbed convex combinations of datapoint pairs in both input and feature space to learn
+                        smoother decision boundaries, leading to improved robustness. The advantageous implicit
+                        regularization
+                        effects of NFM compared to previous mixup training methods are further understood with our
+                        theoretical
+                        insights. We show that residual networks and vision transfromers trained with NFM have favorable
+                        trade-offs
+                        between predictive accuracy and out-of-distribution generalization.
+                      </p>
+                      Under Review at ICLR 2022.
+                      <br>
+
+                      <strong><a href="https://arxiv.org/abs/2110.02180" target="_blank">paper</a></strong> |
+                      <strong><a href="" target="_blank">blog (coming soon)</a></strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
 
               <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -231,13 +294,13 @@
                       <p>
                         We introduce Goldilocks Selection, a technique for faster model training which selects a
                         sequence of training points that are "just right". We propose an information-theoretic
-                        acquisition function -- the reducible validation loss -- and compute it with a small proxy
+                        acquisition function -- the reducible held-out loss -- and compute it with a small proxy
                         model -- GoldiProx -- to efficiently choose training points that maximize information about a
                         validation set. We show that the selected sequence not only prioritizes learnable, yet
-                        informative information relevant to the evaluation task but also effectively transfers to
-                        across architectures.
+                        information rich data relevant to the evaluation task but also effectively transfers
+                        across architectures and vision tasks.
                       </p>
-                      Workshop in Subset ML at ICML 2021.
+                      Workshop in Subset ML at ICML 2021. Under Review 2022.
                       <br>
 
                       <strong><a href="https://arxiv.org/abs/2107.02565" target="_blank">paper</a></strong> |
