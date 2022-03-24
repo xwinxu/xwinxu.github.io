@@ -186,7 +186,56 @@
                   </tr>
                 </tbody>
               </table>
+              
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr class="grid-2" onmouseout="sdebnn_stop()" onmouseover="sdebnn_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='sdebnn_image'><img src='images/sdebnn.png' width='160' height='160'></div>
+                        <img src='images/sdebnn_bright.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function sdebnn_start() {
+                          document.getElementById('sdebnn_image').style.opacity = "1";
+                        }
+                        function sdebnn_stop() {
+                          document.getElementById('sdebnn_image').style.opacity = "0";
+                        }
+                        sdebnn_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>Infinitely Deep Bayesian Neural Networks with Stochastic Differential Equations
+                      </papertitle>
+                      <br>
+                      <firstauth>Winnie Xu</firstauth>,
+                      <a href="https://www.cs.toronto.edu/~rtqichen/" target="_blank"> Ricky T.Q. Chen</a>,
+                      <a href="https://www.lxuechen.com/" target="_blank"> Xuechen Li</a>,
+                      <a href="http://www.cs.toronto.edu/~duvenaud/" target="_blank"> David Duvenaud</a>
+                      <br>
+                      <p>
+                        We explore the concept of infinite-dimensional stochastic variational inference
+                        in learning the dynamics of continuous-time Neural ODEs with instantaneous noise. Our framework
+                        trains Bayesian neural networks by parameterizing weight uncertainty with stochastic
+                        differential equations (SDEs) and associate efficient gradient-based algorithms.
+                        We also conjecture and derive zero variance gradient estimators to the infinite-dimensional case
+                        as the approximate posterior converges to the true posterior.
+                      </p>
+                      International Conference on Artificial Intelligence and Statistics (AISTATS), 2022.
+                      <br>
 
+                      <strong><a href="https://arxiv.org/abs/2102.06559" target="_blank">paper</a></strong> |
+                      <strong><a href="https://docs.google.com/presentation/d/1bY2JYuUXMADivDfhN4uE2b9h3vTyrn2l3h7zSzKuSZI/edit?usp=sharing" target="_blank">poster</a></strong> |
+                      <strong><a href="https://docs.google.com/presentation/d/11Bj1AKLxF4e8qp8rpsfFGZTp9HiAYhR6Uq9DUBLki9Q/edit?usp=sharing">slides</a></strong> | 
+                      <strong><a href="https://github.com/xwinxu/bayesian-sde">code</a></strong> | 
+                      <strong><a href="https://recorder-v3.slideslive.com/?share=63357&s=77eb1b8d-8782-46dc-b59d-6ffbc6eeb87c">talk</a></strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
               <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
@@ -235,6 +284,8 @@
                       <br>
 
                       <strong><a href="https://arxiv.org/abs/2110.02180" target="_blank">paper</a></strong> |
+                      <strong><a href="https://github.com/xwinxu/xwinxu.github.io/blob/master/research/Noisy_Feature_Mixup__ICLR_2022_.pdf" target="_blank">slides</a></strong> |
+                      <strong><a href="https://recorder-v3.slideslive.com/?share=63056&s=b5dda80c-4975-4c6f-83c7-f0c48b800bab" target="_blank">talk</a></strong> | 
                       <strong><a href="" target="_blank">blog (coming soon)</a></strong>
                     </td>
                   </tr>
@@ -292,55 +343,6 @@
 
                       <strong><a href="https://arxiv.org/abs/2107.02565" target="_blank">paper</a></strong> |
                       <strong><a href="research/goldiprox-poster.pdf" target="_blank">poster</a></strong>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-              <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr class="grid-2" onmouseout="sdebnn_stop()" onmouseover="sdebnn_start()">
-                    <td style="margin: 0 auto;">
-                      <div class="one">
-                        <div class="two" id='sdebnn_image'><img src='images/sdebnn.png' width='160' height='160'></div>
-                        <img src='images/sdebnn_bright.png' width='160' height='160'>
-                      </div>
-                      <script type="text/javascript">
-                        function sdebnn_start() {
-                          document.getElementById('sdebnn_image').style.opacity = "1";
-                        }
-                        function sdebnn_stop() {
-                          document.getElementById('sdebnn_image').style.opacity = "0";
-                        }
-                        sdebnn_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;vertical-align:middle">
-                      <papertitle>Infinitely Deep Bayesian Neural Networks with Stochastic Differential Equations
-                      </papertitle>
-                      <br>
-                      <firstauth>Winnie Xu</firstauth>,
-                      <a href="https://www.cs.toronto.edu/~rtqichen/" target="_blank"> Ricky T.Q. Chen</a>,
-                      <a href="https://www.lxuechen.com/" target="_blank"> Xuechen Li</a>,
-                      <a href="http://www.cs.toronto.edu/~duvenaud/" target="_blank"> David Duvenaud</a>
-                      <br>
-                      <p>
-                        We explore the concept of infinite-dimensional stochastic variational inference
-                        in learning the dynamics of continuous-time Neural ODEs with instantaneous noise. Our framework
-                        trains Bayesian neural networks by parameterizing weight uncertainty with stochastic
-                        differential equations (SDEs) and associate efficient gradient-based algorithms.
-                        We also conjecture and derive zero variance gradient estimators to the infinite-dimensional case
-                        as the approximate posterior converges to the true posterior.
-                      </p>
-                      International Conference on Artificial Intelligence and Statistics (AISTATS), 2022.
-                      <br>
-
-                      <strong><a href="https://arxiv.org/abs/2102.06559" target="_blank">paper</a></strong> |
-                      <strong><a href="https://docs.google.com/presentation/d/1bY2JYuUXMADivDfhN4uE2b9h3vTyrn2l3h7zSzKuSZI/edit?usp=sharing" target="_blank">poster</a></strong> |
-                      <strong><a href="https://github.com/xwinxu/bayesian-sde">code</a></strong>
-                      <strong><a href="">talk</a></strong>
                     </td>
                   </tr>
                 </tbody>
