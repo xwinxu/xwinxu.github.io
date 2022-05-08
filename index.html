@@ -82,29 +82,33 @@
                       global communities, and use technology to empower expansive reformation.
                     </p>
                     <p>
-                      I'm a senior undergrad at the <a target="_blank" href="http://cs.toronto.edu">University of
-                        Toronto</a> studying
-                      <strong>Computer Science, Statistics and Math</strong>.<br>
-                      My research interests lie at the intersection of <strong>generative models, continuous-time
-                        parameterizations</strong>, and
-                      <strong>distributional robustness</strong>.<br>
-                      I'm fortunate to be advised by <a target="_blank"
+                      My research interests lie at the intersection of <strong>generative models, probabilistic inference</strong>, and
+                      <strong>natural language understanding</strong>. My goal is to build interpretable and reliable AI systems with
+                      the incorporation of useful inductive biases and development of powerful learning algorithms. <br>
+                      Towards this, I explore ways to inject classical algorithms with differentiable components,
+                      build methods informed by intermediate representations of stochastic processes, and improve logical reasoning in machines through 
+                      augmented communication with large language models.<br>
+                      I'm currently a Visiting Researcher with <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a
+                      target="_blank" href="http://statsml.stanford.edu/">Stanford StasML</a>) and a 
+                      Student Researcher at <a target="_blank" href="https://research.google/">Google Brain</a>
+                      with <a target="_blank" href="https://openai.com/blog/authors/igor/">Igor Mordatch</a> and 
+                      <a target="_blank" href="http://ddohan.com/">David Dohan</a>.
+                    </p>
+                    <p>
+                      I majored in Artifical Intelligence as a <strong>Computer Science, Statistics and Math</strong> 
+                      undergraduate at the <a target="_blank" href="http://cs.toronto.edu">University of Toronto</a>.
+                      I was fortunate to begin my AI research journey with <a target="_blank"
                         href="http://www.cs.toronto.edu/~duvenaud/">David Duvenaud</a> (<a target="_blank"
-                        href="https://vectorinstitute.ai/#people">Vector Institute</a>)
-                      and <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a
-                        target="_blank" href="http://statsml.stanford.edu/">Stanford StasML</a>).
-                      I am also spending time as a Student Researcher at <a target="_blank" href="https://research.google/">Google Brain</a>
-                      hosted by <a target="_blank" href="https://openai.com/blog/authors/igor/">Igor Mordatch</a>.
+                        href="https://vectorinstitute.ai/#people">Vector Institute</a>) where I worked on 
+                        latent variable models and neural differential equations.
                       <!-- I also enjoy regularly collaborating on open research projects with the
                       brilliant researchers at <a target="_blank" href="https://for.ai">FOR.ai</a>. -->
                     </p>
                     <p>
-                      Previously, I developed sparse neural network models at
+                      Throughout my undergrad, I have spent time at 
                       <a target="_blank" href="https://research.google/">Tensorflow</a>,
-                      accelerated sim2real transfer in RL and robotics at <a
-                        href="https://www.nvidia.com/en-us/research/robotics/">NVIDIA Research</a>,
-                      and brought large-scale models of human-generated content
-                      to reality at <a href="https://cohere.ai/">Co:here</a> / <a href="https://oatml.cs.ox.ac.uk/">OATML</a>.
+                      <a href="https://www.nvidia.com/en-us/research/robotics/">NVIDIA Research</a>,
+                      and <a href="https://cohere.ai/">Co:here</a> / <a href="https://oatml.cs.ox.ac.uk/">OATML</a>.
                       In earlier days, I studied biology and computational genomics with <a target="_blank"
                         href=https://hoffmanlab.org />Michael Hoffman</a>
                       at <a target="_blank" href="http://www.uhnresearch.ca/institutes/pm">Princess Margaret Cancer Center</a>.
@@ -163,25 +167,72 @@
                                                 fascinated by intelligence.
                                                 <br> -->
                         My recent work focuses on improving the robustness of <strong>neural differential equation</strong> 
-                        paradigms, developing scalable methods for more <strong>data efficient mini-batching</strong> in LMs, and
-                        optimizing <strong>generative models</strong> with stochastic processes. 
+                        paradigms, developing scalable methods for more <strong>data efficient mini-batching</strong> in LLMs, and
+                        optimizing <strong>generative models</strong> with differentiable representations of discrete processes. 
                       </p>
 
                       <p>
-                        As a biologist-turned deep learning scientist, I hope to better inform the research
-                        and ventures I previously engaged with in medtech and tissue engineering like
-                        <a href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5260&target="
+                        As a biologist-turned deep learning scientist, I hope to democratize the fruits of deep learning to 
+                        other fields in natural sciences and engineering.
+                        <!-- <a href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5260&target="
                           _blank"">this</a>,
                         <a href="https://www.nature.com/articles/s41596-018-0022-9?WT.feed_name=subjects_cancer-microenvironment">this</a>
-                        and <a href="https://wxu.page.link/mirr" target="_blank">this</a>.
-                      </p>
-                      <p>
+                        and <a href="https://wxu.page.link/mirr" target="_blank">this</a>. -->
                         From exploring genetic editing and basic protein informatics, to now
-                        developing new learning algorithms and representations,
-                        much of my work is about inferring the physical world, exploring the
-                        anomalies and uncertainties of dynamical systems, and reasoning about the underpinnings of
+                        developing new learning algorithms and understanding of complex machines,
+                        much of my work is about inferring properties of the physical world, exploring the
+                        anomalies and uncertainties of observed phenomena, and reasoning about the underpinnings of
                         causality.
                       </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr class="grid-2" onmouseout="fractal_stop()" onmouseover="fractal_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='fractal_image'><img src='images/fractal.png' width='160' height='160'></div>
+                        <img src='images/fractal_bright.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function fractal_start() {
+                          document.getElementById('fractal_image').style.opacity = "1";
+                        }
+                        function fractal_stop() {
+                          document.getElementById('fractal_image').style.opacity = "0";
+                        }
+                        fractal_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>Self–Similarity Priors: Neural Collages as Differentiable Fractal Representations
+                      </papertitle>
+                      <br>
+                      <firstauth>Winnie Xu*</firstauth>,
+                      <a href="https://zymrael.github.io/" target="_blank">Michael Poli*</a>,
+                      <a href="https://scholar.google.co.jp/citations?user=IwCfl4UAAAAJ&hl=en" target="_blank">Stefano Masseroli*</a>,
+                      <a href="https://cs.stanford.edu/~chenlin/" target="_blank">Chenlin Meng</a>,
+                      <a href="https://scholar.google.com/citations?user=xhMkQfwAAAAJ&hl=en" target="_blank">Kuno Kim</a>,
+                      <a href="https://cs.stanford.edu/~ermon/" target="_blank"> Stefano Ermon</a>
+                      <br>
+                      <p>
+                        We develop a new class of differentiable operators that leverage the underlying regularity of natural 
+                        and artificial objects at various scales. Neural Collages are a class of implicit operators that 
+                        discover self-similar representations of data and are efficient neural compressors, powerful decoders 
+                        in deep generative models, and may be used towards various creative and artistic generations.
+                      </p>
+                      Preprint, 2022.
+                      <br>
+
+                      <strong><a href="https://arxiv.org/abs/2204.07673" target="_blank">paper</a></strong>
+                      <!-- <strong><a href="https://docs.google.com/presentation/d/1bY2JYuUXMADivDfhN4uE2b9h3vTyrn2l3h7zSzKuSZI/edit?usp=sharing" target="_blank">poster</a></strong> |
+                      <strong><a href="https://docs.google.com/presentation/d/11Bj1AKLxF4e8qp8rpsfFGZTp9HiAYhR6Uq9DUBLki9Q/edit?usp=sharing">slides</a></strong> | 
+                      <strong><a href="https://github.com/xwinxu/bayesian-sde">code</a></strong> | 
+                      <strong><a href="https://virtual.aistats.org/virtual/2022/poster/3152">talk</a></strong> -->
                     </td>
                   </tr>
                 </tbody>
