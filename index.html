@@ -83,19 +83,20 @@
                     </p>
                     <p>
                       My research interests lie at the intersection of <strong>generative models, probabilistic inference</strong>, and
-                      <strong>natural language understanding</strong>. My goal is to build interpretable and reliable AI systems with
-                      the incorporation of useful inductive biases and development of powerful learning algorithms.
+                      <strong>natural language understanding</strong>. My goal is to build interpretable and reliable generalist systems through
+                      the incorporation of useful inductive biases and development of powerful learning / inference schemes.
                       Towards this, I explore ways to inject classical algorithms with differentiable components,
-                      build methods informed by intermediate representations of stochastic processes, and improve logical reasoning in machines through 
-                      augmented communication with large language models.
+                      build methods informed by intermediate representations of stochastic processes, and improve reasoning 
+                      in large language models via compositional augmentation.
                     </p>
                     <p>
-                      I'm currently a Visiting Researcher with <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a
+                      I'm currently a Visiting Research Student with <a target="_blank" href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a> (<a
                       target="_blank" href="http://statsml.stanford.edu/">Stanford StasML</a>) and a 
                       Student Researcher at <a target="_blank" href="https://research.google/">Google Brain</a>
                       with <a target="_blank" href="https://openai.com/blog/authors/igor/">Igor Mordatch</a> 
                       (<a target="_blank" href="https://research.google/teams/brain/robotics/">Brain Robotics</a>) and 
-                      <a target="_blank" href="http://ddohan.com/">David Dohan</a> (<a target="_blank" href="https://research.google/research-areas/natural-language-processing/">Generative Models</a>).
+                      <a target="_blank" href="http://ddohan.com/">David Dohan</a> 
+                      (<a target="_blank" href="https://research.google/research-areas/natural-language-processing/">Generative Models</a>).
                       <br>
                       I majored in Artifical Intelligence as a <strong>Computer Science, Statistics and Math</strong> 
                       undergraduate at the <a target="_blank" href="http://cs.toronto.edu">University of Toronto</a>.
@@ -111,7 +112,7 @@
                       <a target="_blank" href="https://research.google/">Brain/Tensorflow</a>,
                       <a href="https://www.nvidia.com/en-us/research/robotics/">NVIDIA Research</a>,
                       <a href="https://oatml.cs.ox.ac.uk/">OATML</a>, and <a href="https://cohere.ai/">Co:here</a>.
-                      In earlier days, I studied biology and computational genomics with <a target="_blank"
+                      In earlier pre-med days, I studied biology and computational genomics with <a target="_blank"
                         href=https://hoffmanlab.org />Michael Hoffman</a>
                       at <a target="_blank" href="http://www.uhnresearch.ca/institutes/pm">Princess Margaret Cancer Center</a>.
                     </p>
@@ -170,11 +171,11 @@
                                                 <br> -->
                         My recent work focuses on improving the robustness of <strong>neural differential equation</strong> 
                         paradigms, developing scalable methods for more <strong>data efficient mini-batching</strong> in LLMs, and
-                        optimizing <strong>generative models</strong> with differentiable representations of discrete processes. 
+                        building <strong>generative models</strong> with differentiable representations of compressible, periodic features. 
                       </p>
 
                       <p>
-                        As a biologist-turned deep learning scientist, I hope to democratize the fruits of deep learning to 
+                        As a biologist-turned deep learning scientist, I hope to democratize the fruits of machine learning to 
                         other fields in natural sciences and engineering.
                         <!-- <a href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5260&target="
                           _blank"">this</a>,
@@ -190,6 +191,61 @@
                   </tr>
                 </tbody>
               </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr class="grid-2" onmouseout="cascades_stop()" onmouseover="cascades_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='cascades_image'><img src='images/cascades_bright.png' width='160' height='160'></div>
+                        <img src='images/cascades.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function cascades_start() {
+                          document.getElementById('cascades_image').style.opacity = "1";
+                        }
+                        function cascades_stop() {
+                          document.getElementById('cascades_image').style.opacity = "0";
+                        }
+                        cascades_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>Language Model Cascades
+                      </papertitle>
+                      <br>
+                      <a href="http://ddohan.com/" target="_blank">David Dohan</a>,
+                      <firstauth>Winnie Xu</firstauth>,
+                      <a href="https://research.google/people/AitorLewkowycz/" target="_blank">Aitor Lewkowycz</a>,
+                      <a href="http://www.jacobaustin.org/" target="_blank">Jacob Austin</a>,
+                      <a href="https://davidbieber.com/" target="_blank">David Bieber</a>,
+                      <a href="https://raphagl.com/" target="_blank">Raphael Gontijo Lopes</a>,
+                      <a href="http://www.cs.toronto.edu/~ywu/" target="_blank">Yuhuai Wu</a>,
+                      <a href="https://scholar.google.com/citations?user=YdHW1ycAAAAJ&hl=en" target="_blank">Henryk Michalewski</a>,
+                      <a href="https://research.google/people/105197/" target="_blank">Rif A. Saurous</a>,
+                      <a href="http://www.sohldickstein.com/" target="_blank">Jascha Sohl-dickstein</a>,
+                      <a href="https://scholar.google.com/citations?user=MxxZkEcAAAAJ&hl=en" target="_blank">Kevin Murphy</a>
+                      <a href="https://research.google/people/CharlesSutton/" target="_blank">Charles Sutton</a>
+                      <br>
+                      <p>
+                        Modern language models do in-context learning and show amazing abilities to zero-shot generalize to unseen conditions. 
+                        We represent compositions of prompted language models as probabilistic programs termed Model Cascades. 
+                        With this general framework for sampling and inference, we formalize prompting, reasoning, and tool use as graphical 
+                        models over random variables with complex string values.
+                      </p>
+                      Bayond Bayes: Paths Towards Universal Reasoning Systems @ ICML, 2022 <firstauth>[Spotlight]</firstauth>.
+                      <br>
+
+                      <!-- <strong><a href="https://sites.google.com/corp/view/multi-game-transformers" target="_blank">web</a></strong> |  -->
+                      <strong><a href="https://drive.google.com/file/d/1pOFwRDEBvo9QtJgrJy-l7Lna7bfBPgU6/view" target="_blank">paper</a></strong> | 
+                      <!-- <strong><a href="" target="_blank">blog (tba)</a></strong> |  -->
+                      <strong><a href="" target="_blank">code (tba)</a></strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
          
               <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -240,10 +296,6 @@
                       <strong><a href="https://arxiv.org/abs/2205.15241" target="_blank">paper</a></strong> | 
                       <strong><a href="" target="_blank">blog (tba)</a></strong> | 
                       <strong><a href="" target="_blank">code (tba)</a></strong>
-                      <!-- <strong><a href="https://docs.google.com/presentation/d/1bY2JYuUXMADivDfhN4uE2b9h3vTyrn2l3h7zSzKuSZI/edit?usp=sharing" target="_blank">poster</a></strong> |
-                      <strong><a href="https://docs.google.com/presentation/d/11Bj1AKLxF4e8qp8rpsfFGZTp9HiAYhR6Uq9DUBLki9Q/edit?usp=sharing">slides</a></strong> | 
-                      <strong><a href="https://github.com/xwinxu/bayesian-sde">code</a></strong> | 
-                      <strong><a href="https://virtual.aistats.org/virtual/2022/poster/3152">talk</a></strong> -->
                     </td>
                   </tr>
                 </tbody>
@@ -448,7 +500,7 @@
                         information rich data relevant to the evaluation task but also effectively transfers
                         across architectures and vision tasks.
                       </p>
-                      International Conference on Machine Learning (ICML), 2022 [Spotlight].
+                      International Conference on Machine Learning (ICML), 2022 <firstauth>[Spotlight]</firstauth>.
                       <br>
 
                       <strong><a href="https://arxiv.org/abs/2107.02565" target="_blank">paper</a></strong> |
