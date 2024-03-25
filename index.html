@@ -174,6 +174,53 @@
               <table
                 style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
+                  <tr class="grid-2" onmouseout="kto_stop()" onmouseover="kto_start()">
+                    <td style="margin: 0 auto;">
+                      <div class="one">
+                        <div class="two" id='kto_image'><img src='images/kto_bright.png' width='160' height='160'></div>
+                        <img src='images/kto.png' width='160' height='160'>
+                      </div>
+                      <script type="text/javascript">
+                        function kto_start() {
+                          document.getElementById('kto_image').style.opacity = "1";
+                        }
+                        function kto_stop() {
+                          document.getElementById('kto_image').style.opacity = "0";
+                        }
+                        kto_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;vertical-align:middle">
+                      <papertitle>KTO: Model Alignment as Prospect Theoretic Optimization
+                      </papertitle>
+                      <br>
+                      <a href="https://kawine.github.io/" target="_blank">Kawin Ethayarajh</a>,
+                      <firstauth>Winnie Xu</firstauth>,
+                      <a href="https://muennighoff.github.io/" target="_blank">Niklas Muennighoff</a>,
+                      <a href="https://web.stanford.edu/~jurafsky/" target="_blank">Dan Jurafsky</a>
+                      <a href="https://douwekiela.github.io/" target="_blank">Douwe Kiela</a>
+                      <br>
+                      <p>
+                        Alignment methods like RLHF and DPO expect feedback in the form of preferences (e.g., Output A is better than B for input X). 
+                        Utilizing human annotation efforts for this feedback quickly gets very expensive, and can also result in conflicting data.
+                        Kahneman-Tversky Optimization (KTO) matches or exceeds (state-of-the-art) DPO performance without using preference data.
+                        KTO is far easier to use in the real world, where preferences are scarce and expensive to collect.
+                      </p>
+                      Preprint, 2024.
+                      <br>
+                      <strong><a href="https://arxiv.org/abs/2402.01306" target="_blank">paper</a></strong> |
+                      <strong><a href="https://twitter.com/winniethexu/status/1765609217979974136" target="_blank">leaderboard</a></strong> |
+                      <strong><a href="https://contextual.ai/better-cheaper-faster-llm-alignment-with-kto/" target="_blank">blog</a></strong> | 
+                      <strong><a href="https://github.com/ContextualAI/HALOs" target="_blank">code</a></strong> |
+                      <strong><a href="https://huggingface.co/ContextualAI" target="_blank">model checkpoints</a></strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
                   <tr class="grid-2" onmouseout="cmshp_stop()" onmouseover="cmshp_start()">
                     <td style="margin: 0 auto;">
                       <div class="one">
