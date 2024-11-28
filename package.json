@@ -4,7 +4,7 @@
   "description": "Visit winniexu.ca",
   "main": "app.js",
   "dependencies": {
-    "local-web-server": "^3.0.7"
+    "local-web-server": "^5.3.0"
   },
   "devDependencies": {},
   "scripts": {
